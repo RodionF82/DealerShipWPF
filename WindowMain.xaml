@@ -68,7 +68,6 @@
                 <Button Grid.Column="0" Grid.Row="1" Width="100" Height="100" Margin="10"/>
                 <Button Grid.Column="0" Grid.Row="2" Width="100" Height="100" Margin="10"/>-->
                 <Frame Name="FrameCars">
-                    
                 </Frame>
             </Grid>
         </StackPanel>
