@@ -50,6 +50,7 @@
                         Style="{StaticResource EclipseBorder}"></Button>
             </StackPanel>
         </Border>
+        
         <StackPanel Grid.Column="1">
             <Grid>
                 <!--<Grid.ColumnDefinitions>
