@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DealerShipWPF"
         mc:Ignorable="d"
-        Title="Автосалон" Height="550" Width="1000"
-        MinHeight="400" MinWidth="600"
-        MaxHeight="1080" MaxWidth="1920"
+        Title="Автосалон" Height="570" Width="900"
+        MinHeight="570" MinWidth="900"
+        MaxHeight="1080" MaxWidth="2000"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <Style TargetType="Button" x:Key="EclipseBorder">
@@ -23,7 +23,21 @@
                 </Setter.Value>
             </Setter>
             <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="5 7 5 5"/>
+            <Setter Property="Height" Value="60"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#1E90FF"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
+        <!--<Style x:Key="hoverBtn" TargetType="Button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="LightSteelBlue"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>-->
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -40,36 +54,22 @@
                 <Line X1="900" X2="0" Stroke="Black" StrokeThickness="2"
                       Margin="0, 4, 0, 0">
                 </Line>
-                <Button Height="60" Width="170" Margin="3" 
-                        Style="{StaticResource EclipseBorder}">Автомобили</Button>
-                <Button Height="60" Width="170" Margin="3"
-                        Style="{StaticResource EclipseBorder}">Клиенты</Button>
-                <Button Height="60" Width="170" Margin="3"
-                        Style="{StaticResource EclipseBorder}"></Button>
-                <Button Height="60" Width="170" Margin="3"
-                        Style="{StaticResource EclipseBorder}"></Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}" Name="btnCars" Click="btnCars_Click">Автомобили</Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}" Name="btnClients" Click="btnClients_Click">Клиенты</Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}" Name="stats" Click="stats_Click">Статистика</Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}">Профиль</Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}">Настройки</Button>
+                <Button 
+                        Style="{StaticResource EclipseBorder}" Name="btnExit" Click="btnExit_Click">Выйти</Button>
             </StackPanel>
         </Border>
-        <StackPanel Grid.Column="1">
-            <Grid>
-                <!--<Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
-                    <ColumnDefinition Width="10*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="100*"/>
-                    <RowDefinition Height="100*"/>
-                    <RowDefinition Height="100*"/>
-                    <RowDefinition Height="100*"/>
-                </Grid.RowDefinitions>
-                <Button Grid.Column="0" Grid.Row="0" Width="100" Height="100" Margin="10"/>
-                <Button Grid.Column="0" Grid.Row="1" Width="100" Height="100" Margin="10"/>
-                <Button Grid.Column="0" Grid.Row="2" Width="100" Height="100" Margin="10"/>-->
-                <Frame Name="FrameCars">
-                </Frame>
-            </Grid>
-        </StackPanel>
+
+        <Frame Grid.Column="1" Name="MainFrame" NavigationUIVisibility="Hidden">
+        </Frame>
     </Grid>
 </Window>

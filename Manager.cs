@@ -10,5 +10,6 @@ namespace DealerShipWPF
     internal class Manager
     {
         public static Frame FrameCars { get; set; }
+        public static Frame FrameClients { get; set; }
     }
 }

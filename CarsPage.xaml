@@ -5,10 +5,57 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:DealerShipWPF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="570" d:DesignWidth="800"
       Title="CarsPage">
 
     <Grid>
-        <Button Content="123" Background="AliceBlue" Width="100" Height="30" Name="NextPage" Click="NextPage_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Background="#FFF">
+            <Grid Background="AliceBlue">
+                <StackPanel Grid.Row="0" Grid.Column="0" Margin="20, 2, 20, 0">
+                    <WrapPanel Margin="1">
+                        <Image Source="Images/CarsImage/vwGolf7.jpg" Margin="1"/>
+                    </WrapPanel>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Мощность двигателя: 140 л.с</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Привод: передний</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Цена: 1 500 000 Р.</Label>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" Margin="1"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" Background="#FFF">
+            <Grid Background="AliceBlue" Margin="1">
+                <StackPanel Grid.Row="0" Grid.Column="0" Margin="20, 2, 20, 0">
+                    <WrapPanel Margin="1">
+                        <Image Source="Images/CarsImage/vwGolf7.jpg" Margin="1"/>
+                    </WrapPanel>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Мощность двигателя: 140 л.с</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Привод: передний</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Цена: 1 500 000 Р.</Label>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" Margin="1"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="0" Background="#FFF">
+            <Grid Background="AliceBlue" Margin="1">
+                <StackPanel Grid.Row="0" Grid.Column="0" Margin="20, 2, 20, 0">
+                    <WrapPanel Margin="1">
+                        <Image Source="Images/CarsImage/vwGolf7.jpg" Margin="1"/>
+                    </WrapPanel>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Мощность двигателя: 140 л.с</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Привод: передний</Label>
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="1">Цена: 1 500 000 Р.</Label>
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Купить" Margin="1"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Page>

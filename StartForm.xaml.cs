@@ -56,13 +56,25 @@ namespace DealerShipWPF
            */
             this.Hide();
             WindowMain wn = new WindowMain();
-            wn.ShowDialog();
+            wn.Show();
         }
 
         private void Label_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Registration registration = new Registration();
             registration.Show();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            PassTB.Text = PassBoxTB.Password;
+            PassBoxTB.Visibility = Visibility.Hidden;
+        }
+
+        private void CheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            PassBoxTB.Password = PassTB.Text;
+            PassBoxTB.Visibility = Visibility.Visible;
         }
     }
 }
