@@ -24,7 +24,7 @@ namespace DealerShipWPF
             InitializeComponent();
         }
 
-        private void stats_Click(object sender, RoutedEventArgs e)
+        private void btnStats_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Эта функция будет доступна в будущем");
         }
@@ -44,6 +44,16 @@ namespace DealerShipWPF
         {
             MainFrame.Navigate(new ClientsPage());
             Manager.FrameClients = MainFrame;
+        }
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Эта функция будет доступна в будущем");
+        }
+
+        private void btnProfile_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

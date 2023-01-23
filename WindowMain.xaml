@@ -8,7 +8,8 @@
         Title="Автосалон" Height="570" Width="900"
         MinHeight="570" MinWidth="900"
         MaxHeight="1080" MaxWidth="2000"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Icon="Images/iconCarBlue.ico">
     <Window.Resources>
         <Style TargetType="Button" x:Key="EclipseBorder">
             <Setter Property="Template">
@@ -59,11 +60,11 @@
                 <Button 
                         Style="{StaticResource EclipseBorder}" Name="btnClients" Click="btnClients_Click">Клиенты</Button>
                 <Button 
-                        Style="{StaticResource EclipseBorder}" Name="stats" Click="stats_Click">Статистика</Button>
+                        Style="{StaticResource EclipseBorder}" Name="btnStats" Click="btnStats_Click">Статистика</Button>
                 <Button 
-                        Style="{StaticResource EclipseBorder}">Профиль</Button>
+                        Style="{StaticResource EclipseBorder}" Name="btnProfile" Click="btnProfile_Click">Профиль</Button>
                 <Button 
-                        Style="{StaticResource EclipseBorder}">Настройки</Button>
+                        Style="{StaticResource EclipseBorder}" Name="btnSettings" Click="btnSettings_Click">Настройки</Button>
                 <Button 
                         Style="{StaticResource EclipseBorder}" Name="btnExit" Click="btnExit_Click">Выйти</Button>
             </StackPanel>

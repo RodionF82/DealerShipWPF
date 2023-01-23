@@ -9,6 +9,24 @@
       Title="AddEditPage">
 
     <Grid>
-        <TextBlock Text="ЙОу!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Марка"/>
+        <TextBlock Text="Модель" Grid.Row="1"/>
+        <TextBlock Text="Модификация"  Grid.Row="2"/>
+        <TextBlock Text="Комплектация"  Grid.Row="3"/>
+        <TextBlock Text="Цена"  Grid.Row="4"/>
+        <TextBox Grid.Column="1" Margin="10, 30, 10, 30"/>
     </Grid>
 </Page>

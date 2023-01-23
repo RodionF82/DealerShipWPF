@@ -76,5 +76,12 @@ namespace DealerShipWPF
             PassBoxTB.Password = PassTB.Text;
             PassBoxTB.Visibility = Visibility.Visible;
         }
+
+        private void clear_Click(object sender, RoutedEventArgs e)
+        {
+            PassBoxTB.Clear();
+            PassTB.Text = "";
+            LoginTB.Text = "";
+        }
     }
 }
